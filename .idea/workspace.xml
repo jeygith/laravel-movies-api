@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3f70368-be33-4fea-9a78-b16317bc24a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Tool_based_on_Symfony_Console_6_8_19_9_35_AM_artisan.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Movie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +24,12 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/ViewMovieListTest.php">
+        <entry file="file://$PROJECT_DIR$/app/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="45" column="36" lean-forward="true" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+            <state relative-caret-position="507">
+              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
               <folding>
-                <element signature="e#33#47#0#PHP" expanded="true" />
+                <element signature="e#23#78#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,6 +44,9 @@
       <command text="artisan make:migration create_movies_table --create=movies" />
       <command text="artisan route:list" />
       <command text="artisan make:controller MoviesController" />
+      <command text="artisan make:test AddReviewTest" />
+      <command text="artisan make:test RegisterTest" />
+      <command text="artisan make:test UserTest --unit" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -68,9 +63,14 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_06_08_083514_create_movies_table.php" />
         <option value="$PROJECT_DIR$/tests/TestCase.php" />
         <option value="$PROJECT_DIR$/tests/Feature/ExampleTest.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MoviesController.php" />
         <option value="$PROJECT_DIR$/tests/Feature/ViewMovieListTest.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/AddReviewTest.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/RegisterTest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
+        <option value="$PROJECT_DIR$/tests/Unit/UserTest.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
       </list>
     </option>
   </component>
@@ -182,6 +182,32 @@
             <path>
               <item name="laravel-movies-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravel-movies-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel-movies-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-movies-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel-movies-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-movies-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel-movies-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-movies-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel-movies-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-movies-api" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -239,9 +265,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.ViewMovieListTest.user_can_view_movie_list">
+  <component name="RunManager" selected="PHPUnit.UserTest.can_generate_token">
     <configuration name="ExampleTest.testBasicTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\ExampleTest" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testBasicTest" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RegisterTest.user_registers_successfully" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\RegisterTest" file="$PROJECT_DIR$/tests/Feature/RegisterTest.php" method="user_registers_successfully" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UserTest.can_generate_token" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\UserTest" file="$PROJECT_DIR$/tests/Unit/UserTest.php" method="can_generate_token" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="ViewMovieListTest.testExample" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -258,6 +292,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.UserTest.can_generate_token" />
+        <item itemvalue="PHPUnit.RegisterTest.user_registers_successfully" />
         <item itemvalue="PHPUnit.ViewMovieListTest.user_can_view_movie_list" />
         <item itemvalue="PHPUnit.ExampleTest.testBasicTest" />
         <item itemvalue="PHPUnit.ViewMovieListTest.testExample" />
@@ -274,44 +310,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559972232740</updated>
-      <workItem from="1559972234134" duration="9507000" />
+      <workItem from="1559972234134" duration="12642000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ExampleTest_testBasicTest - 2019.06.08 at 11h 55m 09s.xml">
-      <configuration name="ExampleTest.testBasicTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="RegisterTest_user_registers_successfully - 2019.06.08 at 13h 09m 46s.xml">
+      <configuration name="RegisterTest.user_registers_successfully" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ExampleTest_testBasicTest - 2019.06.08 at 11h 55m 41s.xml">
-      <configuration name="ExampleTest.testBasicTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="RegisterTest_user_registers_successfully - 2019.06.08 at 13h 10m 08s.xml">
+      <configuration name="RegisterTest.user_registers_successfully" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ViewMovieListTest_user_can_view_movie_list - 2019.06.08 at 11h 57m 00s.xml">
-      <configuration name="ViewMovieListTest.user_can_view_movie_list" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="RegisterTest_user_registers_successfully - 2019.06.08 at 13h 11m 55s.xml">
+      <configuration name="RegisterTest.user_registers_successfully" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ViewMovieListTest_user_can_view_movie_list - 2019.06.08 at 11h 59m 45s.xml">
-      <configuration name="ViewMovieListTest.user_can_view_movie_list" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="RegisterTest_user_registers_successfully - 2019.06.08 at 13h 12m 21s.xml">
+      <configuration name="RegisterTest.user_registers_successfully" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ViewMovieListTest_user_can_view_movie_list - 2019.06.08 at 12h 12m 00s.xml">
-      <configuration name="ViewMovieListTest.user_can_view_movie_list" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="RegisterTest_user_registers_successfully - 2019.06.08 at 13h 13m 26s.xml">
+      <configuration name="RegisterTest.user_registers_successfully" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ViewMovieListTest_user_can_view_movie_list - 2019.06.08 at 12h 13m 05s.xml">
-      <configuration name="ViewMovieListTest.user_can_view_movie_list" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="RegisterTest_user_registers_successfully - 2019.06.08 at 13h 14m 36s.xml">
+      <configuration name="RegisterTest.user_registers_successfully" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ViewMovieListTest_user_can_view_movie_list - 2019.06.08 at 12h 13m 24s.xml">
-      <configuration name="ViewMovieListTest.user_can_view_movie_list" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="UserTest_can_generate_token - 2019.06.08 at 13h 18m 46s.xml">
+      <configuration name="UserTest.can_generate_token" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ViewMovieListTest_user_can_view_movie_list - 2019.06.08 at 12h 23m 59s.xml">
-      <configuration name="ViewMovieListTest.user_can_view_movie_list" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="UserTest_can_generate_token - 2019.06.08 at 13h 18m 54s.xml">
+      <configuration name="UserTest.can_generate_token" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ViewMovieListTest_user_can_view_movie_list - 2019.06.08 at 12h 25m 06s.xml">
-      <configuration name="ViewMovieListTest.user_can_view_movie_list" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="UserTest_can_generate_token - 2019.06.08 at 13h 19m 11s.xml">
+      <configuration name="UserTest.can_generate_token" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ViewMovieListTest_user_can_view_movie_list - 2019.06.08 at 12h 27m 14s.xml">
-      <configuration name="ViewMovieListTest.user_can_view_movie_list" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="UserTest_can_generate_token - 2019.06.08 at 13h 20m 41s.xml">
+      <configuration name="UserTest.can_generate_token" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9507000" />
+    <option name="totallyTimeSpent" value="12642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="959" height="1052" extended-state="4" />
@@ -319,7 +355,7 @@
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" sideWeight="0.50180507" side_tool="true" weight="0.3033954" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49819493" visible="true" weight="0.3023001" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49819493" visible="true" weight="0.36692223" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -365,13 +401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Movie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpunit.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
@@ -403,13 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MoviesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -426,10 +448,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/ViewMovieListTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="45" column="36" lean-forward="true" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+        <state relative-caret-position="650">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="e#33#47#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Movie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/AddReviewTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/RegisterTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding>
+            <element signature="e#33#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/UserFactory.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/UserTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding>
+            <element signature="e#30#43#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+          <folding>
+            <element signature="e#23#78#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
