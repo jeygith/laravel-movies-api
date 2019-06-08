@@ -24,4 +24,7 @@ Route::post('register', 'Auth\RegisterController@Register');
 
 Route::post('login', 'Auth\LoginController@login');
 
+Route::post('logout', 'Auth\LoginController@logout');
+
+
 
