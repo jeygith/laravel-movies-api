@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Movie;
+use Illuminate\Http\Request;
 
 class MoviesController extends Controller
 {
@@ -15,7 +16,7 @@ class MoviesController extends Controller
     public function store()
     {
 
-        $movie = create([
+        $movie = Movie::create([
             'name' => request('name'),
             'release_year' => request('release_year'),
             'image' => request('image'),
@@ -24,6 +25,27 @@ class MoviesController extends Controller
             'imdb_id' => request('imdb_id')
         ]);
 
+
         return response()->json($movie, 201);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $movie = Movie::findorFail($id);
+
+
+        $movie->update($request->all());
+
+        return response()->json($movie, 200);
+    }
+
+    public function delete($id)
+    {
+        $movie = Movie::findorFail($id);
+
+        $movie->delete();
+
+        return response()->json(null, 204);
+
     }
 }

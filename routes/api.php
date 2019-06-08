@@ -29,8 +29,20 @@ Route::post('logout', 'Auth\LoginController@logout');
 
 
 Route::group(['middleware' => 'auth:api'], function () {
+
     Route::post('movies/{id}/reviews', 'MovieReviewsController@store');
+
+    Route::post('movies', 'MoviesController@store');
+
+
+    Route::patch('movies/{id}', 'MoviesController@update');
+
+    Route::delete('movies/{id}', 'MoviesController@delete');
+
 
 });
 
-Route::post('movies', 'MoviesController@store');
+
+
+
+

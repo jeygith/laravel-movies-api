@@ -21,6 +21,7 @@ class CreateMoviesTable extends Migration
             $table->text('plot')->nullable();
             $table->string('country')->nullable();
             $table->string('imdb_id')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
