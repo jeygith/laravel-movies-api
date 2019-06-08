@@ -10,13 +10,21 @@ class MoviesController extends Controller
 
     public function index()
     {
-        return Movie::all();
+        $movies = Movie::all();
+        foreach ($movies as $movie) {
+            $movie['reviews'] = $movie->reviews()->get();
+        }
+        return $movies;
     }
 
     public function show($id)
     {
-        $movie = Movie::findOrFail($id);
-        return $movie;
+        $movies = Movie::findOrFail($id);
+
+        foreach ($movies as $movie) {
+            $movie['reviews'] = $movie->reviews()->get();
+        }
+        return $movies;
     }
 
     public function store()

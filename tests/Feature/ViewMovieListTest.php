@@ -77,6 +77,8 @@ class ViewMovieListTest extends TestCase
         $response = $this->json('GET', '/api/movies/');
         // assert
 
+        $response->dump();
+
         $response->assertStatus(200);
 
         $response->assertJsonStructure([
