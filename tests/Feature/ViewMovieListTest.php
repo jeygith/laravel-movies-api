@@ -29,6 +29,7 @@ class ViewMovieListTest extends TestCase
             'imdb_id' => 'tt4154756'
         ]);
 
+
         // act
 
         $response = $this->json('GET', '/api/movies/' . $movie->id);

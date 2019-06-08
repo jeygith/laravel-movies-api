@@ -23,6 +23,6 @@ class MovieReviewsController extends Controller
 
         $review = $movie->reviews()->create($request);
 
-        return response()->json([], 201);
+        return response()->json($review, 201);
     }
 }
