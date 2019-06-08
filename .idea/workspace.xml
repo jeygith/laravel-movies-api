@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3f70368-be33-4fea-9a78-b16317bc24a7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,18 +25,23 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/User.php">
+        <entry file="file://$PROJECT_DIR$/tests/Feature/LoginTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+            <state relative-caret-position="301">
+              <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
               <folding>
-                <element signature="e#23#78#0#PHP" expanded="true" />
+                <element signature="e#33#46#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>the given data was invalid</find>
+    </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
@@ -47,6 +53,7 @@
       <command text="artisan make:test AddReviewTest" />
       <command text="artisan make:test RegisterTest" />
       <command text="artisan make:test UserTest --unit" />
+      <command text="artisan make:test LoginTest" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -66,11 +73,16 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/MoviesController.php" />
         <option value="$PROJECT_DIR$/tests/Feature/ViewMovieListTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/AddReviewTest.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
-        <option value="$PROJECT_DIR$/tests/Feature/RegisterTest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
-        <option value="$PROJECT_DIR$/tests/Unit/UserTest.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/tests/Unit/UserTest.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/RegisterTest.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/LoginTest.php" />
       </list>
     </option>
   </component>
@@ -159,7 +171,7 @@
       <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="959" />
     <option name="height" value="1052" />
   </component>
@@ -183,6 +195,12 @@
               <item name="laravel-movies-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravel-movies-api" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel-movies-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-movies-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Console" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="laravel-movies-api" type="b2602c69:ProjectViewProjectNode" />
@@ -265,9 +283,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.UserTest.can_generate_token">
-    <configuration name="ExampleTest.testBasicTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\ExampleTest" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testBasicTest" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.LoginTest.log_in_with_invalid_credentials">
+    <configuration name="LoginTest.log_in_with_invalid_credentials" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\LoginTest" file="$PROJECT_DIR$/tests/Feature/LoginTest.php" method="log_in_with_invalid_credentials" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LoginTest.log_in_with_valid_credentials" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\LoginTest" file="$PROJECT_DIR$/tests/Feature/LoginTest.php" method="log_in_with_valid_credentials" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="RegisterTest.user_registers_successfully" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -276,10 +298,6 @@
     </configuration>
     <configuration name="UserTest.can_generate_token" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\UserTest" file="$PROJECT_DIR$/tests/Unit/UserTest.php" method="can_generate_token" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ViewMovieListTest.testExample" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\ViewMovieListTest" file="$PROJECT_DIR$/tests/Feature/ViewMovieListTest.php" method="testExample" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="ViewMovieListTest.user_can_view_movie_list" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -292,11 +310,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.UserTest.can_generate_token" />
+        <item itemvalue="PHPUnit.LoginTest.log_in_with_invalid_credentials" />
+        <item itemvalue="PHPUnit.LoginTest.log_in_with_valid_credentials" />
         <item itemvalue="PHPUnit.RegisterTest.user_registers_successfully" />
+        <item itemvalue="PHPUnit.UserTest.can_generate_token" />
         <item itemvalue="PHPUnit.ViewMovieListTest.user_can_view_movie_list" />
-        <item itemvalue="PHPUnit.ExampleTest.testBasicTest" />
-        <item itemvalue="PHPUnit.ViewMovieListTest.testExample" />
       </list>
     </recent_temporary>
   </component>
@@ -310,63 +328,63 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559972232740</updated>
-      <workItem from="1559972234134" duration="12642000" />
+      <workItem from="1559972234134" duration="16111000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RegisterTest_user_registers_successfully - 2019.06.08 at 13h 09m 46s.xml">
-      <configuration name="RegisterTest.user_registers_successfully" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="LoginTest_log_in_with_valid_credentials - 2019.06.08 at 13h 59m 16s.xml">
+      <configuration name="LoginTest.log_in_with_valid_credentials" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="RegisterTest_user_registers_successfully - 2019.06.08 at 13h 10m 08s.xml">
-      <configuration name="RegisterTest.user_registers_successfully" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="LoginTest_log_in_with_invalid_credentials - 2019.06.08 at 14h 01m 01s.xml">
+      <configuration name="LoginTest.log_in_with_invalid_credentials" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="RegisterTest_user_registers_successfully - 2019.06.08 at 13h 11m 55s.xml">
-      <configuration name="RegisterTest.user_registers_successfully" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="LoginTest_log_in_with_invalid_credentials - 2019.06.08 at 14h 01m 14s.xml">
+      <configuration name="LoginTest.log_in_with_invalid_credentials" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="RegisterTest_user_registers_successfully - 2019.06.08 at 13h 12m 21s.xml">
-      <configuration name="RegisterTest.user_registers_successfully" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="LoginTest_log_in_with_invalid_credentials - 2019.06.08 at 14h 02m 43s.xml">
+      <configuration name="LoginTest.log_in_with_invalid_credentials" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="RegisterTest_user_registers_successfully - 2019.06.08 at 13h 13m 26s.xml">
-      <configuration name="RegisterTest.user_registers_successfully" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="LoginTest_log_in_with_invalid_credentials - 2019.06.08 at 14h 05m 22s.xml">
+      <configuration name="LoginTest.log_in_with_invalid_credentials" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="RegisterTest_user_registers_successfully - 2019.06.08 at 13h 14m 36s.xml">
-      <configuration name="RegisterTest.user_registers_successfully" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="LoginTest_log_in_with_invalid_credentials - 2019.06.08 at 14h 05m 43s.xml">
+      <configuration name="LoginTest.log_in_with_invalid_credentials" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="UserTest_can_generate_token - 2019.06.08 at 13h 18m 46s.xml">
-      <configuration name="UserTest.can_generate_token" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="LoginTest_log_in_with_invalid_credentials - 2019.06.08 at 14h 06m 52s.xml">
+      <configuration name="LoginTest.log_in_with_invalid_credentials" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="UserTest_can_generate_token - 2019.06.08 at 13h 18m 54s.xml">
-      <configuration name="UserTest.can_generate_token" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="LoginTest_log_in_with_invalid_credentials - 2019.06.08 at 14h 08m 33s.xml">
+      <configuration name="LoginTest.log_in_with_invalid_credentials" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="UserTest_can_generate_token - 2019.06.08 at 13h 19m 11s.xml">
-      <configuration name="UserTest.can_generate_token" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="LoginTest_log_in_with_invalid_credentials - 2019.06.08 at 14h 08m 56s.xml">
+      <configuration name="LoginTest.log_in_with_invalid_credentials" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="UserTest_can_generate_token - 2019.06.08 at 13h 20m 41s.xml">
-      <configuration name="UserTest.can_generate_token" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="LoginTest_log_in_with_invalid_credentials - 2019.06.08 at 14h 09m 05s.xml">
+      <configuration name="LoginTest.log_in_with_invalid_credentials" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12642000" />
+    <option name="totallyTimeSpent" value="16111000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="959" height="1052" extended-state="4" />
+    <frame x="0" y="-1" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" sideWeight="0.50180507" side_tool="true" weight="0.3033954" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49819493" visible="true" weight="0.36692223" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49819493" visible="true" weight="0.178762" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" weight="0.32938644" />
       <window_info anchor="bottom" id="Regex Tester" />
       <window_info anchor="bottom" id="Command Line Tools Console" weight="0.32831" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32831" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32795697" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32938644" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32903227" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -391,13 +409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -463,20 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/AddReviewTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -484,30 +481,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/RegisterTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-          <folding>
-            <element signature="e#33#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/factories/UserFactory.php">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Unit/UserTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
           <folding>
             <element signature="e#30#43#0#PHP" expanded="true" />
           </folding>
@@ -516,10 +503,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+        <state relative-caret-position="441">
+          <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
           <folding>
             <element signature="e#23#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/RegisterTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+          <folding>
+            <element signature="e#33#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="41" column="63" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="132" column="23" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
+          <folding>
+            <element signature="e#45#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-388">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/LoginTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+          <folding>
+            <element signature="e#33#46#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
