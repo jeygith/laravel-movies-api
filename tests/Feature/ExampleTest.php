@@ -16,6 +16,10 @@ class ExampleTest extends TestCase
     {
         $response = $this->get('/');
 
+        $response = $this->json('GET', '/api/user/1');
+
+        $response->dump();
+
         $response->assertStatus(200);
     }
 }
