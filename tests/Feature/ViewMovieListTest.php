@@ -20,7 +20,7 @@ class ViewMovieListTest extends TestCase
         // arrange
         // create movie
 
-        $movie = Movie::create([
+        $movie = factory(Movie::class)->create([
             'name' => "Avengers Infinity War",
             'release_year' => "2018",
             'image' => 'https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg',
