@@ -52,4 +52,37 @@ class ViewMovieListTest extends TestCase
 
 
     }
+
+    /** @test */
+    function user_can_view_all_movies()
+    {
+        $this->withoutExceptionHandling();
+
+
+        // arrange
+        // create movie
+
+        $movie = factory(Movie::class)->create([
+            'name' => "Avengers Infinity War",
+            'release_year' => "2018",
+            'image' => 'https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg',
+            'plot' => 'The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.',
+            'country' => 'USA',
+            'imdb_id' => 'tt4154756'
+        ]);
+
+
+        // act
+
+        $response = $this->json('GET', '/api/movies/');
+        // assert
+
+        $response->assertStatus(200);
+
+        $response->assertJsonStructure([
+            '*' => ['id', 'name', 'release_year', 'image', 'plot', 'country', 'imdb_id'],
+        ]);
+    }
+
+
 }

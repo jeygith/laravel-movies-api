@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class MoviesController extends Controller
 {
+
+    public function index()
+    {
+        return Movie::all();
+    }
+
     public function show($id)
     {
         $movie = Movie::findOrFail($id);
